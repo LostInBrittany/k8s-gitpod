@@ -1,10 +1,8 @@
 ARG GITPOD_IMAGE=gitpod/workspace-base:latest
 FROM ${GITPOD_IMAGE}
 
-ARG KUBECTL_VERSION
-
 ## Install Kubectl
-RUN curl -LO https://storage.googleapis.com/kubernetes-release/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl && \
+RUN curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl" && \
     chmod +x ./kubectl && \
     sudo mv ./kubectl /usr/local/bin/kubectl && \
     mkdir ~/.kube
