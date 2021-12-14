@@ -39,7 +39,7 @@ To do it you need to follow this steps:
     ```yaml
     tasks:
       - name: Set K8s context
-        command: echo $KUBERNETES | base64 -d > ~/.kube/config    
+        command: echo $KUBECONFIG | base64 -d > ~/.kube/config    
     ```
 
 
