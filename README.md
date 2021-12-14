@@ -22,7 +22,7 @@ nano ~/.kube/config
 
 Gitpod supports encrypted, user-specific environment variables. They are stored as part of your user settings and can be used to set access tokens, or pass any other kind of user-specific information to your workspaces.
 
-To do it you need to follow this steps:
+To do it you need to follow these steps:
 
 1. Convert Kubeconfig to base64
 
@@ -34,7 +34,7 @@ To do it you need to follow this steps:
 
     ![GitPod environment variables](./img/gitpod-env-variable.jpg)
 
-1. Configure the project to extract kubeconfig, by editing your `.gitpod.yml` file and add this following content:
+1. Configure the project to extract kubeconfig, by editing your `.gitpod.yml` file and add the following content:
 
     ```yaml
     tasks:
