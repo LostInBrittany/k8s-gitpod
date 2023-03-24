@@ -17,7 +17,7 @@ RUN curl -s "https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/
 
 ## Install K9s
 RUN wget "https://github.com/derailed/k9s/releases/latest/download/k9s_Linux_amd64.tar.gz" && \
-     tar xzf k9s_Linux_amd64.tar.gz && \\
+     tar xzf k9s_Linux_amd64.tar.gz && \
      sudo mv k9s /usr/local/bin/k9s
 
 ## Install dependencies
